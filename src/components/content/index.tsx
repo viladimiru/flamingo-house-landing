@@ -41,6 +41,7 @@ export function Content() {
 						src='/assets/flamingo.png'
 						alt='flamingo logo'
 					/>
+					<div className="fl__logo-waves"></div>
 				</div>
 				<nav className='fl__nav'>
 					<a

@@ -1,0 +1,9 @@
+<svg viewBox="140.995 140.011 159.924 43.903" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient gradientUnits="userSpaceOnUse" cx="221.05" cy="136.314" r="80.089" id="gradient-2" gradientTransform="matrix(0.999821, 0, 0, 0.4549, 0.053907, 96.756912)">
+      <stop offset="0" style="stop-color: rgba(99, 211, 228, 1)"/>
+      <stop offset="1" style="stop-color: rgba(33, 171, 192, 1)"/>
+    </radialGradient>
+  </defs>
+  <path d="M 300.961 140.029 C 260.968 140.029 260.968 176.421 220.975 176.421 C 200.143 176.421 190.162 166.547 179.728 157.085 C 170.13 148.383 160.15 140.029 140.99 140.029 L 140.99 184.269 L 301.139 183.974 L 300.961 140.029 Z" style="fill: url(#gradient-2);"/>
+</svg>
