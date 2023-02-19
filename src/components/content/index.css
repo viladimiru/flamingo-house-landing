@@ -1,0 +1,114 @@
+.fl {
+	display: flex;
+	position: relative;
+	align-items: center;
+	flex-direction: column;
+	align-self: center;
+}
+.fl__logo {
+	position: relative;
+	overflow: hidden;
+}
+.fl__logo::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(#00000000 40%, var(--bg-color-primary) 90%);
+	z-index: 100;
+	pointer-events: none;
+}
+.fl__content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	opacity: 0;
+	transition: transform 1s, opacity 2s ease-in-out;
+	transform: translateY(-50%);
+	padding-top: 40px;
+}
+.fl__header {
+	justify-content: center;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 100%;
+	transition: top 1s, transform 1s ease-in-out;
+}
+.fl--typed > .fl__header {
+	top: 0%;
+}
+.fl--typed > .fl__content {
+	opacity: 1;
+	transform: translateY(0%);
+}
+.fl__logo-img {
+	height: 120px;
+	animation-name: flamingopulse;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+.fl__nav {
+	list-style-type: none;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 10px;
+}
+.fl__nav-item {
+	padding: 5px 10px;
+	position: relative;
+	color: var(--primary-text);
+	font-weight: bold;
+}
+.fl__nav-link {
+	text-decoration: none;
+}
+.fl__nav-item::before {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 6px;
+	background: linear-gradient(to right, var(--bg-color-primary), var(--primary-text));
+	width: 0%;
+	transition: all 250ms ease-in-out;
+}
+.fl__nav-item:hover::before {
+	width: 100%;
+}
+.fl__header {
+	color: white;
+	display: flex;
+	align-items: center;
+	height: 35px;
+}
+.fl__header > h1 {
+	margin: 0;
+}
+.fl__header > .typed-cursor {
+	position: relative;
+}
+.fl__header > .typed-cursor::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	height: 24px;
+	width: 8px;
+	background: var(--primary-text);
+}
+
+@keyframes flamingopulse {
+	from {
+		transform: translateY(12%) rotate(5deg);
+	}
+	to {
+		transform: translateY(0) rotate(0deg);
+	}
+}

@@ -7,12 +7,16 @@ const { title } = Astro.props;
 ---
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang='en'>
 	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
+		<meta charset='UTF-8' />
+		<meta name='viewport' content='width=device-width' />
+		<link rel='icon' href='/favicon.ico?v=4' />
+		<meta name='generator' content={Astro.generator} />
+		<link
+			rel='stylesheet'
+			href='https://fonts.googleapis.com/css2?family=Poppins'
+		/>
 		<title>{title}</title>
 	</head>
 	<body>
@@ -21,15 +25,22 @@ const { title } = Astro.props;
 </html>
 <style is:global>
 	:root {
-		--accent: 124, 58, 237;
-		--accent-gradient: linear-gradient(45deg, rgb(var(--accent)), #da62c4 30%, white 60%);
+		--bg-color-primary: #464353;
+		--bg-color-secondary: #201e25;
+		--primary-text: #e75f5f;
 	}
 	html {
-		font-family: system-ui, sans-serif;
-		background-color: #F6F6F6;
+		font-family: 'Poppins';
+		background: linear-gradient(
+			var(--bg-color-primary) 60%,
+			var(--bg-color-secondary)
+		);
+	}
+	body {
+		margin: 0;
 	}
 	code {
-		font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-			Bitstream Vera Sans Mono, Courier New, monospace;
+		font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
+			DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
 	}
 </style>
