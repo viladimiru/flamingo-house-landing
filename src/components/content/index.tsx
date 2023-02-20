@@ -42,6 +42,8 @@ export function Content() {
 						alt='flamingo logo'
 					/>
 					<div className="fl__logo-waves"></div>
+					<div className="fl__logo-clouds"></div>
+					<div className="fl__logo-clouds-2"></div>
 				</div>
 				<nav className='fl__nav'>
 					<a
