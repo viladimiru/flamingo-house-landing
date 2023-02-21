@@ -37,7 +37,7 @@
 }
 
 .fl__logo-clouds-2::before {
-	animation-delay: 6s;
+	animation-delay: 3s;
 	background-size: 60px 100px;
 }
 .fl__logo-clouds-2::after {
