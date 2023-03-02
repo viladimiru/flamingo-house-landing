@@ -60,6 +60,13 @@ export function Content() {
 					>
 						<li className='fl__nav-item'>Github profile</li>
 					</a>
+					<a
+						className='fl__nav-link'
+						href='https://www.tables-grid.flamingo-house.top/'
+						target='_blank'
+					>
+						<li className='fl__nav-item'>Tables grid</li>
+					</a>
 				</nav>
 			</div>
 		</section>
