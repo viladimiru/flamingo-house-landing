@@ -118,11 +118,11 @@
 	transform-origin: bottom center;
 	pointer-events: none;
 }
-.fl__nav-link:hover::after {
+.fl__nav-link:hover::after, .fl__nav-link:focus::after {
 	left: calc(100% - 8px);
 	opacity: 1;
 }
-.fl__nav-link:hover::before {
+.fl__nav-link:hover::before, .fl__nav-link:focus::before {
 	width: 100%;
 }
 .fl__header {
