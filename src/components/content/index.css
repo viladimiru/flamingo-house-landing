@@ -71,17 +71,21 @@
 	flex-wrap: wrap;
 	justify-content: center;
 	gap: 10px;
+	padding: 0;
 }
 .fl__nav-item {
-	padding: 5px 10px;
 	position: relative;
 	color: var(--primary-text);
 	font-weight: bold;
 }
 .fl__nav-link {
+	padding: 5px 10px;
 	text-decoration: none;
+	color: inherit;
+	display: block;
+	position: relative;
 }
-.fl__nav-item::before {
+.fl__nav-link::before {
 	content: '';
 	position: absolute;
 	bottom: 0;
@@ -95,7 +99,7 @@
 	width: 0%;
 	transition: width 250ms ease-in;
 }
-.fl__nav-item::after {
+.fl__nav-link::after {
 	content: '';
 	width: 16px;
 	height: 16px;
@@ -114,11 +118,11 @@
 	transform-origin: bottom center;
 	pointer-events: none;
 }
-.fl__nav-item:hover::after {
+.fl__nav-link:hover::after {
 	left: calc(100% - 8px);
 	opacity: 1;
 }
-.fl__nav-item:hover::before {
+.fl__nav-link:hover::before {
 	width: 100%;
 }
 .fl__header {

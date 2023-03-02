@@ -41,33 +41,39 @@ export function Content() {
 						src='/assets/flamingo.png'
 						alt='flamingo logo'
 					/>
-					<div className="fl__logo-waves"></div>
-					<div className="fl__logo-clouds"></div>
-					<div className="fl__logo-clouds-2"></div>
+					<div className='fl__logo-waves'></div>
+					<div className='fl__logo-clouds'></div>
+					<div className='fl__logo-clouds-2'></div>
 				</div>
-				<nav className='fl__nav'>
-					<a
-						className='fl__nav-link'
-						href='https://t.me/OBinancePriceBot'
-						target='_blank'
-					>
-						<li className='fl__nav-item'>Telegram bot</li>
-					</a>
-					<a
-						className='fl__nav-link'
-						href='https://github.com/viladimiru'
-						target='_blank'
-					>
-						<li className='fl__nav-item'>Github profile</li>
-					</a>
-					<a
-						className='fl__nav-link'
-						href='https://www.tables-grid.flamingo-house.top/'
-						target='_blank'
-					>
-						<li className='fl__nav-item'>Tables grid</li>
-					</a>
-				</nav>
+				<ul className='fl__nav'>
+					<li className='fl__nav-item'>
+						<a
+							className='fl__nav-link'
+							href='https://t.me/OBinancePriceBot'
+							target='_blank'
+						>
+							Telegram bot
+						</a>
+					</li>
+					<li className='fl__nav-item'>
+						<a
+							className='fl__nav-link'
+							href='https://github.com/viladimiru'
+							target='_blank'
+						>
+							Github profile
+						</a>
+					</li>
+					<li className='fl__nav-item'>
+						<a
+							className='fl__nav-link'
+							href='https://www.tables-grid.flamingo-house.top'
+							target='_blank'
+						>
+							Tables grid
+						</a>
+					</li>
+				</ul>
 			</div>
 		</section>
 	);
