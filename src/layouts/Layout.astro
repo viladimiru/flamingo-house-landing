@@ -10,7 +10,10 @@ const { title } = Astro.props;
 <html lang='en'>
 	<head>
 		<meta charset='UTF-8' />
-		<meta name="description" content="Flamingo house with flamingo projects for flamingo bros">
+		<meta
+			name='description'
+			content='Flamingo house with flamingo projects for flamingo bros'
+		/>
 		<meta name='viewport' content='width=device-width' />
 		<meta name='theme-color' content='#464353' />
 		<link rel='icon' href='/favicon.ico?v=4' />
@@ -52,18 +55,19 @@ const { title } = Astro.props;
 			clickmap: true,
 			trackLinks: true,
 			accurateTrackBounce: true,
+			webvisor: true,
 		});
 	</script>
-	<noscript>
-		<div>
+	<noscript
+		><div>
 			<img
 				src='https://mc.yandex.ru/watch/92618156'
 				style='position:absolute; left:-9999px;'
 				alt=''
 			/>
-		</div>
-	</noscript>
+		</div></noscript
+	>
 </html>
 <style is:global>
-@import url('../styles.css')
+	@import url('../styles.css');
 </style>
